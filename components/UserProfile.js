@@ -19,7 +19,7 @@ export default function PlayerProfile({
       {/* <PlayerID>{id}</PlayerID> */}
       <h3>Signers</h3>
       {signers.map((signer) => {
-        return <div>{signer}</div>;
+        return <div key={signer}>{signer}</div>;
       })}
 
       <SignProfileButton
